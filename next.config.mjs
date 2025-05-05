@@ -2,9 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   output: 'standalone',
-  experimental: {
-    appDir: true,
-  },
+  swcMinify: true
 };
 
 export default nextConfig;
