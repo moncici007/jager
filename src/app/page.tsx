@@ -199,6 +199,7 @@ export default function Home() {
                       <th className="px-4 py-3 text-center text-sm font-semibold text-gray-600">空投资格</th>
                       <th className="px-4 py-3 text-center text-sm font-semibold text-gray-600">领取状态</th>
                       <th className="px-4 py-3 text-right text-sm font-semibold text-gray-600">奖励数量</th>
+                      <th className="px-4 py-3 text-center text-sm font-semibold text-gray-600">操作</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
@@ -235,6 +236,16 @@ export default function Home() {
                         <td className="px-4 py-3 text-right font-medium">
                           {formatNumber(result.airdrop.data.reward)}
                         </td>
+                        <td className="px-4 py-3 text-center">
+                          <a
+                            href="https://jager.meme/?invitor=0x16B9d22B96fC77987820735D8904522655796245"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center px-3 py-1.5 bg-purple-500 text-white text-sm font-medium rounded-lg hover:bg-purple-600 transition-colors"
+                          >
+                            立即领取
+                          </a>
+                        </td>
                       </tr>
                     ))}
                   </tbody>
@@ -259,6 +270,7 @@ export default function Home() {
                       <th className="px-4 py-3 text-right text-sm font-semibold text-gray-600">JagerBNB</th>
                       <th className="px-4 py-3 text-right text-sm font-semibold text-gray-600">待领取 Jager</th>
                       <th className="px-4 py-3 text-right text-sm font-semibold text-gray-600">待领取 JagerBNB</th>
+                      <th className="px-4 py-3 text-center text-sm font-semibold text-gray-600">操作</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
@@ -285,6 +297,16 @@ export default function Home() {
                         </td>
                         <td className="px-4 py-3 text-right font-medium">
                           {formatNumber(result.reward.data.pendingJagerBNB)}
+                        </td>
+                        <td className="px-4 py-3 text-center">
+                          <a
+                            href="https://jager.meme/?invitor=0x16B9d22B96fC77987820735D8904522655796245"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center px-3 py-1.5 bg-orange-500 text-white text-sm font-medium rounded-lg hover:bg-orange-600 transition-colors"
+                          >
+                            立即领取
+                          </a>
                         </td>
                       </tr>
                     ))}
